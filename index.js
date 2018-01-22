@@ -130,19 +130,19 @@ function moveDodger(e) {
    * And be sure to use the functions declared below!
    */
    const code = e.which
-   if(e.which === LEFT_ARROW)
- +   {
- +     e.stopPropagation();
- +     e.preventDefault();
- +     moveDodgerLeft();
- +   }
- +
- +   else if (e.which === RIGHT_ARROW)
- +   {
- +     e.stopPropagation();
- +     e.preventDefault();
- +     moveDodgerRight();
- +   }
+   if(code === LEFT_ARROW)
+   {
+     e.stopPropagation();
+     e.preventDefault();
+     moveDodgerLeft();
+   }
+
+   else if (code === RIGHT_ARROW)
+   {
+     e.stopPropagation();
+     e.preventDefault();
+     moveDodgerRight();
+   }
    
   if(code === 37){
     moveDodgerLeft();
