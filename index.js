@@ -128,7 +128,7 @@ function moveDodger(e) {
    * And be sure to use the functions declared below!
    */
    const code = e.which
-   if ([code === 37,code === 39 ].indexOf(code) > -1) {
+   if ([code === LEFT_ARROW,code === RIGHT_ARROW ].indexOf(code) > -1) {
     e.preventDefault()
     e.stopPropagation()
   }
